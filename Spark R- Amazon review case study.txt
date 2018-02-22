@@ -1,0 +1,51 @@
+Problem Statement
+In this case study, we will take you through some of the common ways to tackle business problems using Apache Spark.
+
+ 
+
+Julian McAuley’s lab at Stanford University, as part of their research, collected 80 million Amazon reviews from 1995 to 2013. This mammoth dataset is divided into different categories.
+
+ 
+
+(The size of this dataset exemplifies the usefulness of Spark. Your local R setup would be stressed under the weight of this dataset, but Spark manages to breeze through it.)
+ 
+
+Problem Statement
+
+ 
+
+Say you are a manager at a media company and want to start a new product line to boost your revenue. Being a media company, you want to get into either ebooks, movies, TV shows or similar such product categories in the entertainment industry. 
+
+ 
+
+Since you are starting a new product line, you want to be sure about the choice of products you’ll buy (and sell). You have three options of product categories to choose from - CDs and Vinyl, Movies and Ebooks (Kindle).
+
+ 
+
+Specifically, you want to use the gigantic dataset to identify:
+
+Which product category has a larger market size
+
+Which product category is likely to be purchased heavily
+
+Which product category is likely to make the customers happy after the purchase
+
+ 
+
+Since you do not have the actual sales data of the products, you will have to use some ‘proxy-metrics’ to estimate the aforementioned metrics.
+
+ 
+
+For example, you can use the ‘number of reviews’ as a proxy for the number of products sold (i.e. the ratio of number of reviews of two product categories will reflect, approximately, the ratio of the number of units sold - you are not trying to estimate the absolute numbers anyway, you want to compare the metrics across categories).
+
+ 
+
+Using similar logic, to estimate the market size, you can use the number of reviewers as a proxy.
+
+ 
+
+Similarly, you can define some metrics to proxy customer satisfaction as well. For instance, if a customer has written a long review and rated the product 5, it indicates that he/she is quite happy with the product.
+
+ 
+
+In short, you are trying to use data about reviews to estimate some key metrics, which will help you identify the product category you should be investing in.
